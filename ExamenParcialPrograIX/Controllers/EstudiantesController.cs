@@ -36,7 +36,6 @@ namespace ExamenParcialPrograIX.Controllers
         [HttpGet("{id}")]
         public ActionResult<Estudiante> GetEstudiante(int? id)
         {
-            //var estudiante = _context.Estudiante.FindAsync(id);
             var estudiante = _context.Estudiante.Find(id);
 
             if (estudiante == null)
